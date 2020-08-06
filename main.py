@@ -42,7 +42,7 @@ async def process_kek_command(message: types.Message):
 
 @dp.message_handler(commands=['help'])
 async def process_help_command(message: types.Message):
-    await message.reply("When you send an image, you will receive information about the objects located on it, and for a different type of input data, I will start repeating you")
+    await message.reply("When you send an image, you will receive information about the objects located on it, and for an another type of input data, I will start repeating you")
 
 
 @dp.message_handler()

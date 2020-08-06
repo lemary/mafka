@@ -15,7 +15,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def process_start_command(message: types.Message):
-    await message.reply("Привет!\nНапиши мне что-нибудь!")
+    await message.reply("Hello!\nSend me a picture!")
 
 @dp.message_handler(content_types = types.ContentTypes.PHOTO)
 async def process_kek_command(message: types.Message):
@@ -42,7 +42,7 @@ async def process_kek_command(message: types.Message):
 
 @dp.message_handler(commands=['help'])
 async def process_help_command(message: types.Message):
-    await message.reply("Напиши мне что-нибудь, и я отпрпавлю этот текст тебе в ответ!")
+    await message.reply("When you send an image, you will receive information about the objects located on it, and for a different type of input data, I will start repeating you")
 
 
 @dp.message_handler()

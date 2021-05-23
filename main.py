@@ -8,8 +8,7 @@ from alfabet import number_to_word
 import numpy as np
 
 import os
-#TOKEN = os.environ["TOKEN"]
-TOKEN = 1305871705:AAETizfOeuLot3R_mSx3kjClr0JA1SzHQzI
+TOKEN = os.environ["TOKEN"]
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
